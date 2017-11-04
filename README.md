@@ -10,3 +10,14 @@ than the best of the existing methods, with comparable or better accuracy. Furth
 size grows the complexity of the proposed methods grows linearly.
 
 # Reference
+If you are using the code for research purposes, please consider citing the following paper: 
+
+```
+@inproceedings{saha.hasan:15*2,
+  title={Finding Network Motifs Using MCMC Sampling.},
+  author={Saha, Tanay Kumar and Al Hasan, Mohammad},
+  booktitle={CompleNet},
+  pages={13--24},
+  year={2015}
+}
+```
