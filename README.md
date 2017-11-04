@@ -16,6 +16,12 @@ To make executable, please run the following command under individual folder.
 make
 ```
 
+You can run the code in following way: 
+
+```
+./executablename -d [fileName] -i 100000 [iteration no] -s 4 [size] -q 1000 [queue size] -undir 1 [always expect undir 1]
+```
+
 
 # Reference
 If you are using the code for research purposes, please consider citing the following paper: 
