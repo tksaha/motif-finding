@@ -9,6 +9,14 @@ based on Markov Chain Monte Carlo (MCMC) sampling. Both the methods are signific
 than the best of the existing methods, with comparable or better accuracy. Further, as the motif 
 size grows the complexity of the proposed methods grows linearly.
 
+# Installation
+To make executable, please run the following command under individual folder.
+
+```
+make
+```
+
+
 # Reference
 If you are using the code for research purposes, please consider citing the following paper: 
 
