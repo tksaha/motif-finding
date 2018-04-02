@@ -11,7 +11,7 @@ size grows the complexity of the proposed methods grows linearly.
 
 # Input File Format
 Node ids should be between 1 to max number of nodes in the network. Otherwise you will get segmentation fault.
-So, please format your network file accordingly before your run the script. Please see the yeast-mod file inside
+So, please format your network file accordingly before your run the script. Please see the **yeast-mod** file inside
 motifMCMC for reference.
 
 
