@@ -9,6 +9,11 @@ based on Markov Chain Monte Carlo (MCMC) sampling. Both the methods are signific
 than the best of the existing methods, with comparable or better accuracy. Further, as the motif 
 size grows the complexity of the proposed methods grows linearly.
 
+# Input File Format
+Node ids should be between 1 to max number of nodes in the network. Otherwise you will get segmentation fault.
+So, please format your network file accordingly before your run the script.
+
+
 # Installation
 To make executable, please run the following command under individual folder.
 
