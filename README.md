@@ -14,6 +14,30 @@ Node ids should be between 1 to max number of nodes in the network. Otherwise yo
 So, please format your network file accordingly before your run the script. Please see the **yeast-mod** file inside
 motifMCMC for reference.
 
+I have provided three script for making proper file format for the executable to run. To make the right format please execute the script in the following sequence:
+
+```
+python  check_undirected.py dataset/CA-GrQc
+```
+Please note that there is no .txt at the end of the file. the script will generate a file with **UND** appended at the end of the file name.
+
+```
+python make_connected_BFS_2.py  dataset/CA-GrQcUND.txt
+```
+The script will create a file with BFSCON appened. Basically, it will create a connected network if the original input 
+graph is not connected. 
+
+```
+python     make_proper_input_file_for_mcmc_sample.py  dataset/CA-GrQcUND.txtBFSCON
+```
+
+The above script will rearrage the node ids from 1 to maximum node id.
+
+```
+./motifMiner-mcmc.out  -d dataset/CA-GrQcUND.txtBFSCON-mcmc-format   -i 10000 -s 5 -q 10000 -undir 1
+```
+
+
 
 # Installation
 To make executable, please run the following command under individual folder.
@@ -22,7 +46,7 @@ To make executable, please run the following command under individual folder.
 make
 ```
 
-You can run the code in following way: 
+You can run the code in following way (In this version -undir should always be 1): 
 
 ```
 ./executablename -d [fileName] -i 100000 [iteration no] -s 4 [size] -q 1000 [queue size] -undir 1 [always expect undir 1]
