@@ -17,24 +17,24 @@ motifMCMC for reference.
 I have provided three script for making proper file format for the executable to run. To make the right format please execute the script in the following sequence:
 
 ```
-python  check_undirected.py dataset/CA-GrQc
+python  check_undirected.py CA-GrQc
 ```
 Please note that there is no .txt at the end of the file. the script will generate a file with **UND** appended at the end of the file name.
 
 ```
-python make_connected_BFS_2.py  dataset/CA-GrQcUND.txt
+python make_connected_BFS_2.py  CA-GrQcUND.txt
 ```
 The script will create a file with BFSCON appened. Basically, it will create a connected network if the original input 
 graph is not connected. 
 
 ```
-python     make_proper_input_file_for_mcmc_sample.py  dataset/CA-GrQcUND.txtBFSCON
+python     make_proper_input_file_for_mcmc_sample.py  CA-GrQcUND.txtBFSCON
 ```
 
 The above script will rearrage the node ids from 1 to maximum node id.
 
 ```
-./motifMiner-mcmc.out  -d dataset/CA-GrQcUND.txtBFSCON-mcmc-format   -i 10000 -s 5 -q 10000 -undir 1
+./motifMiner-mcmc.out  -d CA-GrQcUND.txtBFSCON-mcmc-format   -i 10000 -s 5 -q 10000 -undir 1
 ```
 
 
