@@ -6,7 +6,7 @@
 #include<map>
 #include<list>
 #include<bitset>
-#include<boost/interprocess/containers/container/flat_set.hpp>
+#include<boost/interprocess/containers/flat_set.hpp>
 #include<iostream>
 #include<boost/unordered_map.hpp>
 #include "boost/smart_ptr.hpp"
